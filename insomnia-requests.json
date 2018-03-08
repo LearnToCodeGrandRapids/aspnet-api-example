@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2018-03-08T00:30:56.041Z",
+	"__export_date": "2018-03-08T01:29:03.393Z",
 	"__export_source": "insomnia.desktop.app:v5.14.9",
 	"resources": [
 		{
@@ -42,7 +42,7 @@
 			"headers": [],
 			"metaSortKey": -1520186240745,
 			"method": "GET",
-			"modified": 1520384596521,
+			"modified": 1520470506321,
 			"name": "Get All Phones",
 			"parameters": [],
 			"parentId": "wrk_8264521e6cda4bc996e33b66c89f5f3b",
@@ -50,7 +50,7 @@
 			"settingEncodeUrl": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "http://localhost:55000/api/v1/phones",
+			"url": "http://localhost:{{ port }}/api/v1/phones",
 			"_type": "request"
 		},
 		{
@@ -62,7 +62,7 @@
 			"headers": [],
 			"metaSortKey": -1520186240695,
 			"method": "GET",
-			"modified": 1520384625884,
+			"modified": 1520470510688,
 			"name": "Get Apple Phones",
 			"parameters": [],
 			"parentId": "wrk_8264521e6cda4bc996e33b66c89f5f3b",
@@ -70,7 +70,7 @@
 			"settingEncodeUrl": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "http://localhost:55000/api/v1/phones?manufacturer=apple",
+			"url": "http://localhost:{{ port }}/api/v1/phones?manufacturer=apple",
 			"_type": "request"
 		},
 		{
@@ -82,7 +82,7 @@
 			"headers": [],
 			"metaSortKey": -1520186240645,
 			"method": "GET",
-			"modified": 1520384669279,
+			"modified": 1520470514746,
 			"name": "Get OnePlus 5T Phones",
 			"parameters": [],
 			"parentId": "wrk_8264521e6cda4bc996e33b66c89f5f3b",
@@ -90,7 +90,7 @@
 			"settingEncodeUrl": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "http://localhost:55000/api/v1/phones?model=5t",
+			"url": "http://localhost:{{ port }}/api/v1/phones?model=5t",
 			"_type": "request"
 		},
 		{
@@ -102,7 +102,7 @@
 			"headers": [],
 			"metaSortKey": -1520186240595,
 			"method": "GET",
-			"modified": 1520384693677,
+			"modified": 1520472168041,
 			"name": "Get Phone with ID",
 			"parameters": [],
 			"parentId": "wrk_8264521e6cda4bc996e33b66c89f5f3b",
@@ -110,7 +110,7 @@
 			"settingEncodeUrl": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "http://localhost:55000/api/v1/phones/1",
+			"url": "http://localhost:{{ port }}/api/v1/phones/1",
 			"_type": "request"
 		},
 		{
@@ -131,7 +131,7 @@
 			],
 			"metaSortKey": -1520186240545,
 			"method": "POST",
-			"modified": 1520385656502,
+			"modified": 1520470517446,
 			"name": "Add New Phone",
 			"parameters": [],
 			"parentId": "wrk_8264521e6cda4bc996e33b66c89f5f3b",
@@ -139,7 +139,7 @@
 			"settingEncodeUrl": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "http://localhost:55000/api/v1/phones",
+			"url": "http://localhost:{{ port }}/api/v1/phones",
 			"_type": "request"
 		},
 		{
@@ -151,7 +151,7 @@
 			"headers": [],
 			"metaSortKey": -1520186240495,
 			"method": "DELETE",
-			"modified": 1520387217092,
+			"modified": 1520470519345,
 			"name": "Delete Phone by ID",
 			"parameters": [],
 			"parentId": "wrk_8264521e6cda4bc996e33b66c89f5f3b",
@@ -159,8 +159,34 @@
 			"settingEncodeUrl": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "http://localhost:55000/api/v1/phones/1",
+			"url": "http://localhost:{{ port }}/api/v1/phones/1",
 			"_type": "request"
+		},
+		{
+			"_id": "env_c1ae0af99bbc4b5d8076d4919f98bf57",
+			"color": null,
+			"created": 1520470470426,
+			"data": {
+				"port": 55000
+			},
+			"isPrivate": false,
+			"modified": 1520470593275,
+			"name": "ASP.NET",
+			"parentId": "env_c25a8cfed1a646d8a25b5cb5fb4068a8",
+			"_type": "environment"
+		},
+		{
+			"_id": "env_b3292311c2a84bc78c26c29c07969c30",
+			"color": null,
+			"created": 1520470475743,
+			"data": {
+				"port": 55001
+			},
+			"isPrivate": false,
+			"modified": 1520470485040,
+			"name": "ASP.NET Core",
+			"parentId": "env_c25a8cfed1a646d8a25b5cb5fb4068a8",
+			"_type": "environment"
 		}
 	]
 }
